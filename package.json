@@ -1,11 +1,17 @@
 {
   "name": "comfy-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "SocketCluster Sample App ======",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app/main.js"
+    "start": "nodemon index.js --watch"
   },
   "repository": {
     "type": "git",
@@ -16,9 +22,5 @@
   "bugs": {
     "url": "https://github.com/geoctrl/comfy-api/issues"
   },
-  "homepage": "https://github.com/geoctrl/comfy-api#readme",
-  "dependencies": {
-    "hapi": "^14.2.0",
-    "rethinkdb": "^2.3.2"
-  }
+  "homepage": "https://github.com/geoctrl/comfy-api#readme"
 }
